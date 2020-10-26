@@ -6,7 +6,6 @@ import React from 'react';
 import { jsx, css } from '@emotion/core';
 
 import logo from './images/header-logo.png';
-// import banner from './images/home_bg_small.jpg';
 import logoForbes from './images/logo-forbes.png';
 import logoUclahealth from './images/logo-uclahealth.png';
 import logoHowstuffworks from './images/logo-howstuffworks.png';
@@ -18,27 +17,10 @@ import logoMeaww from './images/logo-meaww.png';
 import logoTechrepublic from './images/logo-techrepublic.png';
 import logoThesciencetimes from './images/logo-thesciencetimes.png';
 import logoHackernoon from './images/logo-hackernoon.png';
-import bannerSection3 from './images/section_3_small.jpg';
-import bannerSection2 from './images/section_2.jpg';
+import bannerSection2 from './images/section_3_bg.jpg';
+import bannerSection3 from './images/section_2.jpg';
 
 import img from './images/background.jpg';
-
-/* const centeredContainerStyles = css`
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-`; */
-
-/* const headerStyles = css`
-  ${centeredContainerStyles};
-  padding-bottom: 48px;
-  padding-top: 48px;
-  width: 100%;
-  height: 119px;
-  background-image: url(${img});
-  background-size: cover;
-  height: 95vh;
-`; */
 
 const logoStyles = css`
   margin-right: 890px;
@@ -58,16 +40,6 @@ const sectionOne = css`
   margin: 0;
   background-position-y: -31px;
 `;
-
-/*const divBlockStyles = css`
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin-right: 890px;
-  margin-left: 160px;
-  padding-top: 30px;
-`;
-*/
 
 const h1Styles = css`
   margin-right: 890px;
@@ -177,6 +149,15 @@ const hrStyle = css`
   margin-right: 720px;
 `;
 
+const sectionTwo = css`
+  background-image: url(${bannerSection2});
+  background-size: cover;
+  height: 80vh;
+  margin: 0;
+  background-position-y: 0px;
+  background-position-x: -180px;
+`;
+
 function App() {
   return (
     <>
@@ -214,60 +195,59 @@ function App() {
         <a href="#a">
           <img
             src="https://www.expper.tech/media/logo-therobotreport.svg"
-            alt="TheRobotreport Logo"
+            alt="The Robotreport Logo"
           />
         </a>
         <a href="#a">
-          <img src={logoForbes} alt="TheForbes Logo" />
+          <img src={logoForbes} alt="The Forbes Logo" />
         </a>
         <a href="#a">
-          <img src={logoUclahealth} alt="TheUclahealth Logo" />
+          <img src={logoUclahealth} alt="The Ucla health Logo" />
         </a>
         <a href="#a">
-          <img src={logoHowstuffworks} alt="TheHowstuffworks Logo" />
+          <img src={logoHowstuffworks} alt="The How stuff works Logo" />
         </a>
         <a href="#a">
-          <img src={logoFox11} alt="TheFox11 Logo" />
+          <img src={logoFox11} alt="The Fox11 Logo" />
         </a>
         <a href="#a">
-          <img src={logoSpectrum} alt="TheSpectrum Logo" />
+          <img src={logoSpectrum} alt="The Spectrum Logo" />
         </a>
         <a href="#a">
-          <img src={logoDiscovery} alt="TheDiscovery Logo" />
+          <img src={logoDiscovery} alt="The Discovery Logo" />
         </a>
         <a href="#a">
-          <img src={logoNbc4} alt="TheNbc4 Logo" />
+          <img src={logoNbc4} alt="The Nbc 4 Logo" />
         </a>
         <a href="#a">
-          <img src={logoMeaww} alt="TheMeaww Logo" />
+          <img src={logoMeaww} alt="The Meaww Logo" />
         </a>
         <a href="#a">
-          <img src={logoTechrepublic} alt="TheTechrepublic Logo" />
+          <img src={logoTechrepublic} alt="The Tech republic Logo" />
         </a>
         <a href="#a">
-          <img src={logoThesciencetimes} alt="TheSciencetimes Logo" />
+          <img src={logoThesciencetimes} alt="The Science times Logo" />
         </a>
         <a href="#a">
-          <img src={logoHackernoon} alt="TheHackernoon Logo" />
+          <img src={logoHackernoon} alt="The Hackernoon Logo" />
         </a>
 
-        <section>
-          <h2>I Make Medical Procedures Less Overwhelming</h2>
-          <p>
+        <section css={sectionTwo}>
+          <h2 css={h1Styles}>I Make Medical Procedures Less Overwhelming</h2>
+          <p css={pStyles}>
             Depending on their age, character, and condition, children may react
             to unfamiliar situations in different ways. Some children may not
             even understand why they are in hospital. This can lead to
             psychological trauma.
           </p>
-          <p>
+          <p css={pStyles}>
             As a companion, I help children go through the treatment process
             more smoothly. With me, they feel more comfortable and secure during
             their treatment.
           </p>
-          <img src={bannerSection3} alt="" />
         </section>
         <section>
-          <img src={bannerSection2} alt="" />
+          <img src={bannerSection3} alt="The Robot and the girl who stands" />
           <h2>I Help them Deal with Hospital Stress and Discomfort</h2>
           <p>
             Being in hospital is stressful for children as they are exposed to
