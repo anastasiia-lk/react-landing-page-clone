@@ -2,7 +2,7 @@
 
 This React application is the attempt to clone first section of the [Expper Technologies landing page](https://www.expper.tech/).
 
-![Screenshot](./images/screenshot.jpg)
+![Screenshot](./src/images/screenshot.jpg)
 
 The following library has been used:
 
